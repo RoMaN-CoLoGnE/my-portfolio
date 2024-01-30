@@ -46,7 +46,7 @@
 .about__text {
   display: flex;
   flex-direction: column;
-  max-height: 0; /* Text wird standardmäßig versteckt */
+  max-height: 200px; /* Text wird standardmäßig versteckt */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
 
