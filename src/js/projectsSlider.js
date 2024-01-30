@@ -1,6 +1,7 @@
 
+
 document.addEventListener('DOMContentLoaded', function () {
-  var Swiper = new Swiper('.swiper', {
+  var mySwiper = new Swiper('.swiper', {
     effect: 'cards',
     grabCursor: true,
     initialSlide: 2,
