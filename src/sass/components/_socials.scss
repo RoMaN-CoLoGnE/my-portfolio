@@ -1,0 +1,41 @@
+// socials styles
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  background-color: #4654a3;
+  color: #4654a3;
+
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out,
+    border-radius 500ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: #4654a3;
+    color: #ffffff;
+    border-radius: 30%;
+  }
+}
