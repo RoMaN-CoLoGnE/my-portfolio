@@ -1,26 +1,22 @@
-.projects__wrapper {
-  padding: 20px 0;
-}
-
 .swiper {
-  width: 70%;
-  height: 35vh;
+  width: 300px;
+  height: 220px;
   padding: 5% 0;
 
   @media (min-width: 768px) {
-    width: 50%;
-    height: 45vh;
+    width: 380px;
+    height: 280px;
   }
 
   @media (min-width: 1200px) {
-    width: 50%;
-    height: 50vh;
+    width: 550px;
+    height: 380px;
   }
 }
 
 .swiper-slide {
   position: relative;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   width: 100%;
 }

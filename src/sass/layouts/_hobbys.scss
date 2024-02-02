@@ -1,0 +1,77 @@
+.hobbys {
+}
+
+.hobbys__container {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #4654a32c;
+}
+
+.hobbys__wrapper {
+}
+
+.hobbys__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 26px;
+  @media (max-width: 300px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 36px;
+  }
+}
+
+.hobbys__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hobby__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:nth-child(odd) {
+    transform: rotate(-5deg);
+  }
+
+  &:nth-child(even) {
+    transform: rotate(5deg);
+  }
+
+  @media (min-width: 768px) {
+    &:nth-child(odd) {
+      flex-direction: row;
+      transform: rotate(-5deg);
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      transform: rotate(5deg);
+    }
+  }
+}
+
+.hobbys__subtitle {
+  font-style: italic;
+}
+
+.hobbys__pic {
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+  transition: transform 0.3s ease;
+}
+
+.hobbys__pic:nth-child(odd) {
+}
+
+.hobbys__pic:nth-child(even) {
+}
