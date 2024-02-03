@@ -1,7 +1,5 @@
-import './js/toggleMobileMenu'
+import './js/toggleMobileMenu';
 
-import './js/toggleText'
+import './js/toggleText';
 
-import './js/projectsSlider'
-
-import './js/hobbysSlider'
+import './js/projectsSlider';
