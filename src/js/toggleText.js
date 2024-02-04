@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   function setupToggleButton() {
     const toggleButton = document.getElementById('toggleButton');
-    const toggleItemAboutMob = document.getElementById('mob-about');
-    const toggleItemAboutDesc = document.getElementById('desc-about');
+    // const toggleItemAboutMob = document.getElementById('mob-about');
+    // const toggleItemAboutDesc = document.getElementById('desc-about');
     const aboutText = document.querySelector('.about__text');
 
     let isExpanded = false;
@@ -20,10 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     toggleButton.addEventListener('click', toggleAboutText);
-    toggleItemAboutMob.addEventListener('click', toggleAboutText);
-    toggleItemAboutDesc.addEventListener('click', toggleAboutText);
+    // toggleItemAboutMob.addEventListener('click', toggleAboutText);
+    // toggleItemAboutDesc.addEventListener('click', toggleAboutText);
   }
 
   setupToggleButton();
 });
-
