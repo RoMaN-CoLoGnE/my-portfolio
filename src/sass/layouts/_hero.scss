@@ -22,6 +22,7 @@
   width: 243px;
   height: 243px;
   animation: slide-left 1000ms ease-out 100ms backwards;
+
   @media (min-width: 768px) {
     margin: 0;
   }
@@ -47,6 +48,7 @@
   box-shadow: 0 0 25px rgba(70, 84, 163, 0.8);
   animation: bg-slide 1800ms ease-out 1100ms both;
 }
+
 .hero__picture {
   object-fit: cover;
   object-position: center;

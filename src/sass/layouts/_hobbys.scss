@@ -50,7 +50,6 @@
   top: 0;
   left: 0;
   z-index: -1;
-
   content: '';
   display: block;
   width: 100%;
@@ -88,7 +87,14 @@
 .hobbys__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 20px;
+  @media (min-width: 1200px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .hobby__item {
@@ -98,7 +104,7 @@
   align-items: center;
   padding: 20px;
 
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 
   &:nth-child(odd) {
     transform: rotate(-10deg);
@@ -126,9 +132,11 @@
     }
   }
 
-  // &:hover {
-  //   transform: rotate(0deg); /* Ändert die Rotation bei Hover auf 0 Grad */
-  // }
+  @media (min-width: 1200px) {
+    flex-basis: calc(50% - 15px);
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
 }
 
 .hobbys__subtitle {
@@ -144,8 +152,8 @@
   }
 
   @media (min-width: 1200px) {
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
   }
 }
 
@@ -156,6 +164,12 @@
   object-fit: cover;
   object-position: center center;
   box-shadow: 0 0 25px rgba(70, 84, 163, 0.8);
+
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 50px rgba(255, 110, 110, 0.479);
+  }
 }
 
 .hobbys__footer {
